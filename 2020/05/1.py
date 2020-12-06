@@ -12,6 +12,6 @@ seats = []
 with open('input.txt', 'r') as f:
     for line in f:
         seat = 8 * bin_string_to_num(line[:-4], vertical_map) + bin_string_to_num(line[-4:-1], horizontal_map)
-        seat
+        high = max(high, seat)
 
 print(high)
